@@ -1,0 +1,45 @@
+body
+{
+	background-color: #0066ff;
+}
+.main
+{
+	background-color:#e5e8e8;
+	width: 40%;
+	margin: 8% auto;
+	text-align: center;
+	padding: 20px 0px;
+	border-radius: 5px;
+	display: block;
+}
+
+h2
+{
+   color: #0066ff;
+}
+input
+{
+	display: block;
+	width: 70%;
+	margin: 16px auto;
+	margin-top: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+	outline: none;
+	border-radius: 5px;
+	border: none;
+
+}
+.subc1
+{
+	background-color: #e5e8e8;
+	position: relative;
+	top: 25%;
+	box-sizing: border-box;
+}
+input[type='submit']
+{
+   background-color: #0066ff;
+   border-radius: 5px;
+   color: white;
+}

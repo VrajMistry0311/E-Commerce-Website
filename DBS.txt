@@ -1,0 +1,63 @@
+CREATE table login
+(
+    Id int PRIMARY key not null AUTO_INCREMENT,
+    email varchar(30),
+    passw varchar(20)
+);    
+
+INSERT INTO login (email,passw) VALUES ('o@email.com','password');
+
+
+CREATE TABLE registertbl 
+( 
+  Id int PRIMARY key not null AUTO_INCREMENT,
+  Name varchar(30),
+  Lname varchar(30), 
+  Email varchar(35),
+  Password varchar(30) 
+);
+
+$con = $obj->GetConnection();
+		$name = mysqli_real_escape_string($con,$_REQUEST['name']);
+		$lname = mysqli_real_escape_string($con,$_REQUEST['lname']);
+		$email = mysqli_real_escape_string($con,$_REQUEST['email']);
+		$pw = mysqli_real_escape_string($con,$_REQUEST['password']);
+		$str = "insert into registertbl (Name,Lname,Email,Password) values ('$name','$lname','$email','$pw')";
+		if(mysqli_query($con,$str))
+		{
+			echo "Success";
+		}
+		else
+		{
+			echo "Not successfull";
+		}
+
+CREATE table adtbl
+(
+    email varchar(20),
+    pw varchar(20)
+); 
+
+INSERT INTO adtbl(email,pw) VALUES('admin@gmail.pvt','pw');
+
+
+CREATE TABLE master1
+(
+    Productcode varchar(10),
+    company varchar(20),
+    pname varchar(20),
+    price int,
+    size varchar(10),
+    PRODUCTDETAILS varchar(40),
+    Soldby varchar(20),
+    PhotoURL varchar(40)
+);  
+
+CREATE table binfo 
+(
+    Name varchar(20),
+    email varchar(30),
+    Cname varchar(30),
+    price varchar(10),
+    size varchar(5)
+);    
